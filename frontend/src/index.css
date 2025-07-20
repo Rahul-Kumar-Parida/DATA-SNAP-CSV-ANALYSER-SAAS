@@ -1,0 +1,12 @@
+/* index.css */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f3f6fd;
+  color: #1a237e;
+}
+* {
+  box-sizing: border-box;
+}

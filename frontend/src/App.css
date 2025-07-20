@@ -1,0 +1,118 @@
+/* App.css */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.main-title {
+  text-align: center;
+  color: #1a237e;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  animation: fadeIn 1s;
+}
+
+.subtitle {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+  animation: fadeIn 0.5s;
+}
+
+.spinner {
+  border: 6px solid #e3e6fd;
+  border-top: 6px solid #ffb300;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
+
+.loading-text {
+  font-size: 1.2rem;
+  color: #1a237e;
+  font-weight: bold;
+}
+
+.contact-section {
+  margin: 3rem auto 0 auto;
+  max-width: 700px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(26,35,126,0.08);
+  padding: 2rem;
+  animation: fadeIn 0.7s;
+}
+
+.contact-section h2 {
+  color: #1a237e;
+}
+
+.contact-section a {
+  color: #ffb300;
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+@media (max-width: 700px) {
+  .main-title {
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+  }
+  .contact-section {
+    padding: 1rem;
+    font-size: 0.98rem;
+  }
+  .loading-container {
+    margin: 1rem 0;
+  }
+  .spinner {
+    width: 40px;
+    height: 40px;
+    border-width: 4px;
+  }
+}
+@media (max-width: 500px) {
+  .main-title {
+    font-size: 1.1rem;
+  }
+  .subtitle {
+    font-size: 0.95rem;
+  }
+  .contact-section {
+    padding: 0.5rem;
+    font-size: 0.95rem;
+  }
+}
