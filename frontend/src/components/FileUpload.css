@@ -14,12 +14,10 @@
   margin-left: auto;
   margin-right: auto;
 }
-
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(30px);}
   to { opacity: 1; transform: translateY(0);}
 }
-
 .file-input {
   padding: 0.7rem 1rem;
   border: 1.5px solid #1a237e;
@@ -31,13 +29,11 @@
   width: 100%;
   box-sizing: border-box;
 }
-
 .file-input:focus {
   border-color: #ffb300;
   outline: none;
   box-shadow: 0 0 0 2px #ffe082;
 }
-
 .analyze-btn {
   background: linear-gradient(90deg, #ffb300 60%, #ffa000 100%);
   color: #1a237e;
@@ -52,20 +48,17 @@
   margin-top: 0.5rem;
   letter-spacing: 0.5px;
 }
-
 .analyze-btn:disabled {
   background: #ccc;
   color: #888;
   cursor: not-allowed;
   box-shadow: none;
 }
-
 .analyze-btn:hover:not(:disabled) {
   background: linear-gradient(90deg, #ffa000 60%, #ffb300 100%);
   transform: scale(1.04);
   box-shadow: 0 4px 16px rgba(255,179,0,0.13);
 }
-
 @media (max-width: 600px) {
   .upload-form {
     padding: 1rem 0.5rem;

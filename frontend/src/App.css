@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
 }
-
 main {
   flex: 1;
   width: 100%;
@@ -11,7 +10,6 @@ main {
   margin: 0 auto;
   padding: 0 1rem;
 }
-
 .main-title {
   text-align: center;
   color: #1a237e;
@@ -20,14 +18,12 @@ main {
   letter-spacing: 1px;
   animation: fadeIn 1s;
 }
-
 .subtitle {
   text-align: center;
   color: #333;
   margin-bottom: 2rem;
   font-size: 1.2rem;
 }
-
 .loading-container {
   display: flex;
   flex-direction: column;
@@ -35,7 +31,6 @@ main {
   margin: 2rem 0;
   animation: fadeIn 0.5s;
 }
-
 .spinner {
   border: 6px solid #e3e6fd;
   border-top: 6px solid #ffb300;
@@ -45,18 +40,15 @@ main {
   animation: spin 1s linear infinite;
   margin-bottom: 1rem;
 }
-
 @keyframes spin {
   0% { transform: rotate(0deg);}
   100% { transform: rotate(360deg);}
 }
-
 .loading-text {
   font-size: 1.2rem;
   color: #1a237e;
   font-weight: bold;
 }
-
 .contact-section {
   margin: 3rem auto 0 auto;
   max-width: 700px;
@@ -66,21 +58,17 @@ main {
   padding: 2rem;
   animation: fadeIn 0.7s;
 }
-
 .contact-section h2 {
   color: #1a237e;
 }
-
 .contact-section a {
   color: #ffb300;
   text-decoration: underline;
 }
-
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(30px);}
   to { opacity: 1; transform: translateY(0);}
 }
-
 @media (max-width: 700px) {
   .main-title {
     font-size: 1.5rem;
